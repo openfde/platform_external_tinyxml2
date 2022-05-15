@@ -3,6 +3,15 @@ cc_library {
     host_supported: true,
     vendor_available: true,
     recovery_available: true,
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.neuralnetworks",
+        "test_com.android.neuralnetworks",
+        "com.android.bluetooth.updatable",
+        "com.android.media",
+        "com.android.media.swcodec",
+        "com.android.tethering",
+    ],
     vndk: {
         enabled: true,
     },
